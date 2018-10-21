@@ -1,0 +1,234 @@
+body{
+    font-family: Roboto, Raleway;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    padding: 0;
+    margin: 0 20%;
+}
+
+/* Header classes */
+.top-bar{
+    background: lightseagreen;
+    color: white;
+    font-size: 1.1em;
+}
+.nav.main-nav{
+    background: white;
+    width: 100%;
+    margin-bottom: 3px;
+}
+ul.main-links{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-bottom: -3px;
+}
+header li{
+    padding: 20px 0px;
+    align-self: flex-start;
+    flex-grow: 1;
+    border-bottom: 3px white solid;
+
+    text-align: center;
+}
+.registr{
+    align-self: flex-end;
+}
+a{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-weight: 200;
+    color: black;
+    
+}
+.main-links li:hover{
+    border-bottom-color: lightseagreen;
+    transition: 0.5s;
+}
+.slideshow{
+    position: relative;
+    margin-bottom: 40px;
+    padding: 0;
+}
+.slideshow img{
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    padding: 0;
+}
+#first-img{
+    position: static;
+    opacity: 1;
+}
+/* Content classes */
+.main-part{
+    display: flex;   
+}
+
+.site-content{
+    width: 75%;
+   
+}
+.notation{
+    padding: 0;
+    margin:0;
+    margin-bottom: 1px;
+    font-size: 1.3em;
+    font-weight: 300;
+    color: white;
+}
+.note{
+    text-align: center;
+    width: 100%;
+    background: lightseagreen;
+}
+
+.content{
+    display: flex;
+    margin-right: -3px;
+    margin-bottom: 50px;
+}
+.chem-thumbnail{
+    margin-right: 3px;
+    position: relative;
+    flex-grow: 1;
+}
+.chem-img{
+    width: 100%;
+}
+.chem-img:hover{
+    opacity: 0.5;
+}
+.chem-desc{
+    font-size: 14px;
+    padding: 0;
+    position: absolute;
+    bottom: 2.3%;
+    text-align: center;
+    background: rgba(43, 42, 42, 0.5);
+    color: white;
+}
+
+.content-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3px;
+    grid-row-gap: 0;
+    margin-bottom: 50px;
+    
+}
+.chem-thumbnail-grid, .champion{
+    position: relative;
+}
+.champion{
+    grid-row: 1/3;
+    grid-column: 3/5;
+}
+.champion .chem-desc{
+    bottom: 1.3%;
+}
+.champion img{
+    height: 99%;
+}
+.reward{
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    background: red;
+    border-radius: 50%;
+}
+h4.reward{
+    padding: 5px;
+    color: white;
+    margin: 0;
+}
+
+/* Sidebar */
+.sidebar{
+    width: 25%;
+}
+.sidebar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.sidebar li{
+    width: 90%;
+    padding: 5px;
+    border: 1px lightseagreen solid;
+    border-top: none;
+    background: #fbfbfb;
+}
+.sidebar li:first-child{
+    border-top: 1px lightseagreen solid;
+}
+.sidebar li:hover{
+    background: lightseagreen;
+    color: white;
+}
+
+/* TagCloud */
+.tag-cloud{
+    width: 95%;
+    display: inline-block;
+    margin: 0;
+    margin-top: 20px;
+    border: 1px lightseagreen solid;
+    background: #fbfbfb;
+}
+.tag{
+    display: inline;
+    margin: 0;
+}
+.tag:hover{
+    background: lightseagreen;
+    color: white;
+}
+
+
+/* Footer styles */
+
+.footer{
+    margin-top: 50px;
+    background: lightseagreen;
+    color: white;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+.footer h5{
+    margin: 0;
+    padding: 0;
+}
+.footer-item{
+    margin: 0  50px;
+}
+.footer-item ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-item li{
+    padding: 5px;
+}
+.social li{
+    float: left;
+    margin: 10px;
+}
+.footer-item a{
+    padding: 5px;
+    border: 1px white solid;
+    border-radius: 100%;
+    color: white;
+}
