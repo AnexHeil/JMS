@@ -18,7 +18,7 @@
             <nav class = "nav main-nav">
                 <div class = "container">
                     <ul class = "main-links">
-                        <li><a class = "nav-link" href="main.php" id = "first">ГЛАВНАЯ</a></li>
+                        <li><a id = "home" class = "nav-link" href="main.php" id = "first">ГЛАВНАЯ</a></li>
                         <li><a class = "nav-link" href="#">ПРОДУКЦИЯ</a></li>
                         <li><a class = "nav-link" href="#">ДОСТАВКА</a></li>
                         <li><a class = "nav-link" href="#">КОНТАКТЫ</a></li>
@@ -145,6 +145,6 @@
             </div>
         </div>
     </footer>
+    <script src="app.js"></script>
 </body>
-<script src="app.js"></script>
 </html>

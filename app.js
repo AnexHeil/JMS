@@ -1,10 +1,15 @@
-// console.log(document.getElementById('first'));
-// document.querySelector('#first');
-// document.querySelector('.nav-links');// Select only first one
-// console.log(document.getElementById('first'));
-// document.querySelector('#first');
-// document.querySelector('.nav-links');// Select only first one
-// document.querySelector('h5');
 
+var mainNav = document.querySelector('.main-nav');
+var links = Array.from(document.querySelectorAll('.main-links a'));
+window.onscroll = fixingNav;
 
-//dasdsd
+function fixingNav(){
+    if (mainNav.style.position !== 'fixed' && window.scrollY >= 120){
+        mainNav.id = 'fixed';
+        links.forEach(link => link.classList.add('fixed-link'));
+    }
+    else{
+        links.forEach(link => link.classList.remove('fixed-link'));
+        mainNav.id = '';
+    }
+}

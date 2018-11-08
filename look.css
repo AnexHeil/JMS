@@ -14,10 +14,22 @@ body{
     color: white;
     font-size: 1.1em;
 }
+#fixed{
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+    background: lightseagreen;
+}
 .nav.main-nav{
     background: white;
     width: 100%;
     margin-bottom: 3px;
+    height: 8.3%;
+}
+
+
+.fixed-link{
+    color: white;
 }
 ul.main-links{
     display: flex;
@@ -30,12 +42,13 @@ ul.main-links{
     margin-bottom: -3px;
 }
 header li{
+    height: 100%;
     padding: 20px 0px;
     align-self: flex-start;
     flex-grow: 1;
-    border-bottom: 3px white solid;
-
+    border-bottom: 3px transparent solid;
     text-align: center;
+    box-sizing: border-box;
 }
 .registr{
     align-self: flex-end;
@@ -45,11 +58,14 @@ a{
     margin: 0;
     text-decoration: none;
     font-weight: 200;
-    color: black;
-    
+    color: black; 
 }
 .main-links li:hover{
     border-bottom-color: lightseagreen;
+    transition: 0.5s;
+}
+#fixed li:hover{
+    border-bottom-color: white;
     transition: 0.5s;
 }
 .slideshow{
@@ -125,7 +141,7 @@ a{
     grid-gap: 3px;
     grid-row-gap: 0;
     margin-bottom: 50px;
-    
+    background-repeat: no-repeat;
 }
 .chem-thumbnail-grid, .champion{
     position: relative;
